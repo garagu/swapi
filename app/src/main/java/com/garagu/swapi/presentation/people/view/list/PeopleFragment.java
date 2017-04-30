@@ -10,6 +10,7 @@ import com.garagu.swapi.presentation.common.BaseFragment;
 import com.garagu.swapi.presentation.common.CardDecoration;
 import com.garagu.swapi.presentation.people.di.DaggerPeopleComponent;
 import com.garagu.swapi.presentation.people.di.PeopleModule;
+import com.garagu.swapi.presentation.people.view.detail.CharacterFragment;
 import com.pedrogomez.renderers.ListAdapteeCollection;
 import com.pedrogomez.renderers.RVRendererAdapter;
 import com.pedrogomez.renderers.RendererBuilder;
@@ -92,13 +93,11 @@ public class PeopleFragment extends BaseFragment implements PeoplePresenter.Peop
 
     @Override
     public void openDetail(Character character) {
-        /*
         getFragmentManager()
                 .beginTransaction()
                 .replace(R.id.frame_container, CharacterFragment.newInstance(character))
                 .addToBackStack(null)
                 .commit();
-        */
     }
 
     @Override
